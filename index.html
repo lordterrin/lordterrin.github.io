@@ -16,11 +16,22 @@
 
 <body>
    <div class="object_holder">
+      <div class="add_remove_holder">
+         <div class="object_add">Add</div>
+
+      </div>
+      <div class="object_output">
+      </div>
    </div>
 </body>
 </html>
 
 <script>
    var test_data = [];
+
+   $(document).('click', '.object_add', function() {
+      var random_number = Math.floor(Math.random() * 11);
+      test_data.push(random_number);
+   })
 
 </script>
