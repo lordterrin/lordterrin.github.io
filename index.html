@@ -15,23 +15,36 @@
 </head>
 
 <body>
-   <div class="object_holder">
-      <div class="add_remove_holder">
-         <div class="object_add">Add</div>
-
-      </div>
-      <div class="object_output">
+   <div class="pointless_div">
+      <div class="object_holder">
+         <div class="add_remove_holder">
+            <div class="object_add">Add Element</div>
+         </div>
+         <div class="object_output_holder">
+            <div class="object_output"></div>
+         </div>
       </div>
    </div>
 </body>
 </html>
 
 <script>
+
    var test_data = [];
 
-   $(document).('click', '.object_add', function() {
-      var random_number = Math.floor(Math.random() * 11);
+   $(document).on('click', '.object_add', function() {
+      var random_number = Math.floor(Math.random() * 99);
       test_data.push(random_number);
+
    })
+
+   /* 1. Explain what the Add button does */
+
+
+   /* 2. Make it so that after clicking the add button, the results are output to the screen in the correct place */
+
+
+   /* 3. Add a reset button into the UI that will empty the test_data variable when clicked. Give this item the class name "object_reset" */
+
 
 </script>

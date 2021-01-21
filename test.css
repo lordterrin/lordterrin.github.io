@@ -1,5 +1,74 @@
 /* test css file */
 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+  overflow: hidden;
+  font-family: "Ubuntu", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeSpeed;
+}
+
+.pointless_div {
+   width: 100%;
+   padding-top: 50px;
+}
+
 .object_holder {
+   border: 2px solid grey;
+   border-radius: 6px;
+   height: 350px;
+   display: flex;
 
 }
+
+.add_remove_holder {
+   background: rgb(190 156 156);
+   width: 50%;
+   height: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   flex-direction: column;
+}
+
+.object_add, .object_reset {
+   padding: 10px 20px 10px 20px;
+   border: 2px solid black;
+   background: rgb(65 67 78);
+   color: white;
+   border-radius: 8px;
+   transition: all 500ms;
+   cursor: pointer;
+}
+
+.object_add:hover, .object_reset:hover {
+   transition: all 500ms;
+   background: rgb(25, 27, 38);
+}
+
+.object_output_holder {
+   background: rgb(156 158 190);
+   width: 50%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.object_output {
+   width: 30%;
+   height: 30%;
+   background: white;
+   border: 2px solid black;
+   border-radius: 6px;
+   box-shadow: 2px 3px 4px black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow-wrap: anywhere;
+   padding: 10px;
+}
+
+
